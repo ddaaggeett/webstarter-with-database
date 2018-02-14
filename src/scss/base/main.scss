@@ -1,0 +1,28 @@
+.body{
+	font-family: Courier;
+	font-size: 14px;
+}
+.button {
+	cursor: pointer;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 10px;
+	display: block;
+	width:150px;
+	height:30px;
+}
+.interactives {
+	display: inline-block;
+	vertical-align: middle;
+}
+.interactives_right {
+	margin: 0;
+	display: block;
+	vertical-align: middle;
+}
+.vertical_content {
+	display: block;
+}
+#count {
+	font-size: 50px;
+}
