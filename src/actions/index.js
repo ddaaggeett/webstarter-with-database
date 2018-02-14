@@ -1,0 +1,4 @@
+export const UPDATE_APP_STATE = 'UPDATE_APP_STATE'
+export const INSERT_OBJECT = 'INSERT_OBJECT'
+export const EDIT_OBJECT = 'EDIT_OBJECT'
+export const DELETE_OBJECT = 'DELETE_OBJECT'

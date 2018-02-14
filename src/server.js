@@ -14,6 +14,9 @@ import App from './containers';
 // Load SCSS
 import './scss/app.scss';
 
+// setup RethinkDB
+import setupRethinkDB from './db'
+
 const app = express();
 const hostname = 'localhost';
 const port = 8081;
@@ -46,8 +49,6 @@ app.use((req, res) => {
     // We're good, send the response
     res.status(context.status || 200).send(serverHtml);
   }
-
-  // TODO how to handle 50x errors?
 });
 
 // Start listening
@@ -58,3 +59,5 @@ app.listen(port, (error) => {
     console.info(`\n★★ Listening on port ${ port }. Open up http://${ hostname }:${ port }/ in your browser.\n`); // eslint-disable-line
   }
 });
+
+setupRethinkDB(app)

@@ -14,9 +14,13 @@ import es6Promise from 'es6-promise';
 // Load SCSS
 import './scss/app.scss';
 
+import changefeedListeners from './db/changefeed-listeners'
+
 es6Promise.polyfill();
 
 const store = configureStore();
+
+changefeedListeners(store)
 
 const render = Component => {
 

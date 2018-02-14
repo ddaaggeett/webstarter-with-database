@@ -8,7 +8,7 @@ import * as MainActions from '../actions/main'
 
 function mapStateToProps(state) {
 	return {
-		main: state.main
+		appState: state.appState
 	}
 }
 

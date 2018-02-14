@@ -1,10 +1,10 @@
-export function countUp() {
+import * as actions from '.'
+
+export function updateAppState(newAppState) {
+
+    console.log('\nnewAppState\n',newAppState)
     return {
-        type: 'COUNT_UP'
-    }
-}
-export function countDown() {
-    return {
-        type: 'COUNT_DOWN'
+        type: actions.UPDATE_APP_STATE,
+        newAppState
     }
 }
