@@ -22,6 +22,12 @@ class Main extends Component {
             doctype: doctypes.appState,
             count: this.props.appState.count - 1
         }
+
+        /*
+        Emit socket.io DB insert:
+        see next: ~/src/db/index.js
+        line: socket.on(actions.UPDATE_APP_STATE, function(newAppState) {
+        */
         socket.emit(actions.UPDATE_APP_STATE, newAppState)
     }
 

@@ -1,5 +1,8 @@
 /*
-RethinkDB changefeed logic
+RethinkDB changefeed objects: https://rethinkdb.com/docs/changefeeds/javascript/
+see prev: ~/src/db/index.js
+line: r.table('appState').changes({ includeInitial: true, squash: true }).run(connection).then(changefeeds(socket));
+see next: ~/src/db/changefeed-listeners.js
 */
 import * as actions from '../actions'
 

@@ -26,6 +26,7 @@ export default function(app) {
 
             /*
             emitted from React.jsx components. triggered by user action.
+            RethinkDB API inserts/updates data
             */
             socket.on(actions.UPDATE_APP_STATE, function(newAppState) {
                 try {
@@ -37,7 +38,8 @@ export default function(app) {
             })
 
             /*
-            RethinkDB changefeed
+            RethinkDB changefeed: triggers Redux app state maintenance
+            see next: ~/src/db/changefeeds.js
             */
             r.table('appState').changes({ includeInitial: true, squash: true }).run(connection).then(changefeeds(socket));
     	});

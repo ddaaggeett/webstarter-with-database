@@ -1,10 +1,11 @@
-## this is a jumping-off-point for modern web development
+## [this](https://www.youtube.com/watch?v=MGf7F1NJeCo) is an idiot-proof full-stack starting point for modern web development
 
 ### what you get
+- [universal](https://en.wikipedia.org/wiki/Isomorphic_JavaScript)/isomorphic/SSR [react.JS](https://reactjs.org/): you want user friendly?
+- [socket.io](https://socket.io/): SSR appeal. instant data transfer between server + client
 - [webpack](https://webpack.js.org/): modern web infrastructure
-- [react](https://reactjs.org/): you want user friendly?
 - [redux](https://redux.js.org/): app state container
-- [rethinkDB](https://rethinkdb.com/) connection: modern noSQL database for realtime software -> [how to install](https://rethinkdb.com/docs/install/)
+- [rethinkDB](https://rethinkdb.com/) connection: modern noSQL database for [realtime](https://rethinkdb.com/docs/changefeeds/javascript/) software -> [how to install](https://rethinkdb.com/docs/install/)
 
 ## how to use
 
